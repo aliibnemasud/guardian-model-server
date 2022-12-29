@@ -15,7 +15,6 @@ app.get('/', (req, res) => {
 const run = () => {
 
     try {
-
         app.get("/model", (req, res) => {
             //res.writeHead(200, { 'Content-Type': 'application/json' })
             fs.readFile('model.json', (error, data) => {
